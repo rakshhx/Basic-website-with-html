@@ -1,0 +1,53 @@
+
+
+<!-- Reviews Page -->
+<!DOCTYPE html>
+<html>
+<head><title>Review our product</title>
+    <link rel="icon" type="image/jpeg" href="icon.jpg">
+</head>
+<body style="background: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);">
+    <h1>Customer Reviews</h1>
+    <form action="about.html" method="post">
+        <label for="name"><b>Your Name:</b></label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="productpurchased"><b>Product Purchased:</b></label><br>
+        <select id="productpurchased" name="productpurchased" required>
+            <option value="None">None</option>
+            <option value="ebook">E-book</option>
+            <option value="Document">Document</option>
+            <option value="Invitation">Invitation</option>
+            <option value="Stickers">Stickers</option>
+        </select><br><br>
+
+        <label for="rating"><b>Rating (1 to 5):</b></label><br>
+        <select id="rating" name="rating" required>
+            <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+            <option value="4">⭐⭐⭐⭐ (4)</option>
+            <option value="3">⭐⭐⭐ (3)</option>
+            <option value="2">⭐⭐ (2)</option>
+            <option value="1">⭐ (1)</option>
+        </select><br><br>
+
+        <label for="review"><b>Your Review:</b></label><br>
+        <textarea id="review" name="review" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Submit Review">
+    </form>
+    <h2>Customer Reviews</h2>
+    <p><b>John Doe</b> - ⭐⭐⭐⭐⭐<br>ShopFyle is doing a great job! Highly recommend.</p>
+    <p><b>Jane Smith</b> - ⭐⭐⭐⭐<br>Good quality, clarity of the image was really nice.</p>
+
+</body>
+
+<footer>
+    <center>
+        <p>&copy; <span id="year"></span> ShopFyle | Crafted with ❤️ & Passion</p>
+    </center>
+    </footer>
+    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</html>

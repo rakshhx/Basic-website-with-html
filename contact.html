@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us - ShopFyle</title>
+    <link rel="icon" type="image/jpeg" href="icon.jpg">
+
+</head>
+<body style="background: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);">
+    <center>
+    <h1>Contact Us</h1>
+    <p >Have questions or need support? Reach out to us!</p>
+</center>
+    <h2>Our Contact Information</h2>
+    <p><b>Email:</b> <a href="mailto:shopfyle@example.com">shopfyle@example.com</a></p>
+    <p><b>Phone:</b> +1 (234) 567-890</p>
+    <p><b>Address:</b> 123 Digital Lane, WebCity, WC 56789</p>
+
+    <h2>Send Us a Message</h2>
+    <form action="submit_contact.php" method="post">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Send Message">
+    </form>
+
+    <h2>Follow Us</h2>
+    <p>Stay updated with our latest products and offers:</p>
+    <p>
+        <b>Facebook:</b> <a href="#">facebook.com/shopfyle</a><br>
+        <b>Instagram:</b> <a href="#">instagram.com/shopfyle</a><br>
+        <b>Twitter:</b> <a href="#">twitter.com/shopfyle</a>
+    </p>
+</body>
+
+<footer>
+    <center>
+        <p>&copy; <span id="year"></span> ShopFyle | Crafted with ❤️ & Passion</p>
+    </center>
+    </footer>
+    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    
+</html>
